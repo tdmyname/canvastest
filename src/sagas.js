@@ -20,14 +20,12 @@ export default function* sagas() {
                 item.new.map((newItem,newIndex)=>{
                     value["new"+name+index+newIndex]=dataURLtoBlob(newItem)
                 })
-
             }
         })
-        try{
         const res = yield call(fetch, ServerPath.UNLOAD_PHOTO,{...value})
-        yield alert("导出成功")}catch (e){
-           alert("请检查服务是否开启")
-        }
+      if(res!==undefined && res.message === "ok"){
+            yield alert("导出成功")
+      }
     }
 }
 function dataURLtoBlob(dataurl) {

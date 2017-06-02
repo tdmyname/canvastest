@@ -11,7 +11,6 @@ import * as ServerPath from "./serverPath"
 
 const app = require('express')()
 const server = require('http').createServer(app)
-
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", req.get("origin"))
     res.header("Access-Control-Allow-Credentials", true)

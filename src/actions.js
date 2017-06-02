@@ -8,5 +8,3 @@
 import {createAction} from "redux-act"
 export const  unloadPhoto=createAction()
 export const photoSuccess=createAction()
-export const editWidth=createAction()
-export const editHeight=createAction()

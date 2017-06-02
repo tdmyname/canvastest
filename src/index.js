@@ -18,7 +18,6 @@ import Photos from "./components/photos"
 const sageMiddleware=createSagaMiddleware()
 const store=createStore(reducers,compose(applyMiddleware(sageMiddleware)))
 sageMiddleware.run(sagas)
-
 const container = document.createElement("div")
 document.body.appendChild(container)
 ReactDOM.render(

@@ -7,6 +7,7 @@
  */
 import {photoSuccess} from "../actions"
 import {createReducer} from "redux-act"
+
 export default createReducer({
     [photoSuccess]:(state,payload)=>{
         console.log(payload)

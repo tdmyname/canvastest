@@ -18,5 +18,7 @@ export default (path, param = {}) => {
     return fetch(`http://localhost:3000/${path}`, options)
         .then(function (res) {
             return res.json()
+        }).catch(function (e) {
+            alert("请求异常请检查服务")
         })
 }

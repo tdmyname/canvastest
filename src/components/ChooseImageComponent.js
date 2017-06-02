@@ -47,6 +47,7 @@ const ChooseImageComponent = (props) => {
             }, 1000)
         }
     }
+
     return (
         <div style={{width: 200, height: 200}}>
             {imgs}

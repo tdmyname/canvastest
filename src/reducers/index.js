@@ -9,6 +9,7 @@ import {combineReducers} from "redux"
 import {reducer as form } from "redux-form"
 import photoSuccess from "./photoSuccess"
 import editCanvas from "./editCanvasWidthAndHeight"
+
 export default combineReducers({
     form,photoSuccess,editCanvas
 })

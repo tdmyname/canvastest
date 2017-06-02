@@ -6,7 +6,7 @@
  * <文件描述>
  */
 import React from "react"
-import {unloadPhoto,editHeight,editWidth} from "../actions"
+import {unloadPhoto} from "../actions"
 import {connect} from "react-redux"
 import {reduxForm,Field} from 'redux-form'
 import ChooseImageComponent from "./ChooseImageComponent"
@@ -39,4 +39,4 @@ photoSuccess:state.photoSuccess,
 
 })
 
-export default connect(mapStateToProps,{unloadPhoto,editHeight,editWidth})(PhotoForm)
+export default connect(mapStateToProps,{unloadPhoto})(PhotoForm)
